@@ -50,10 +50,16 @@ header {
     &__item {
         text-decoration: none;
         color: white;
-        margin-left: 1em;
+        padding: 1em;
+        &--active {
+            color: #ff00f2
+        }
 
         &:hover {
-            color: #f36b21;
+            color: #ff00f2;
+            background-color: #a1f9ff;
+            border-radius: .5em;
+            transition: all .2s ease-in;
         }
     }
 }
@@ -194,3 +200,123 @@ header {
         margin-bottom: 0;
     }
 }
+
+
+
+// ---------------------------- ABOUT US --------------------------------
+
+.about-us {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    height: 50vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+        url("/img/restaurant.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1 {
+        text-align: center;
+        margin: auto;
+    }
+}
+
+.about {
+    height: 70vh;
+    display: flex;
+    background: url("/img/texture.jpg");
+    background-repeat: false;
+
+    .box {
+        background-color: rgba(255, 255, 255, 0.5);
+        max-width: 1080px;
+        max-height: 70vh;
+        padding: 2em;
+        text-align: justify;
+        width: 95%;
+        height: 70%;
+        margin: auto;
+        display: flex;
+
+        &__items {
+            margin: auto;
+        }
+    }
+}
+
+
+// ------------------------ Menu ---------------------
+.biriyani-kabab {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    height: 50vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+        url("/img/biriyani1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1 {
+        text-align: center;
+        margin: auto;
+    }
+}
+
+.burger-pizza {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    height: 50vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+        url("/img/pizza.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1 {
+        text-align: center;
+        margin: auto;
+    }
+}
+
+.menu {
+    padding: 3em;
+    display: flex;
+    background: url("/img/texture.jpg");
+    background-repeat: false;
+
+    .box {
+        background-color: rgba(255, 255, 255, 0.5);
+        max-width: 1080px;
+        padding: 2em;
+        text-align: justify;
+        width: 95%;
+        height: 70%;
+        margin: auto;
+        display: flex;
+        position: relative;
+
+        .menu_biriyani {
+            margin: auto;
+            width: 100%;
+
+            .item {
+                font-size: 1.3rem;
+                padding: .2em 1em;
+                border: 1px solid black;
+                margin: 0.5em;
+                display: flex;
+                justify-content: space-between;
+                .name{                    
+                }
+            }
+        }
+    }
+}
+
+

@@ -59,11 +59,19 @@ header {
 .nav__item {
   text-decoration: none;
   color: white;
-  margin-left: 1em;
+  padding: 1em;
+}
+
+.nav__item--active {
+  color: #ff00f2;
 }
 
 .nav__item:hover {
-  color: #f36b21;
+  color: #ff00f2;
+  background-color: #a1f9ff;
+  border-radius: .5em;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .carousel {
@@ -222,5 +230,133 @@ header {
 .copyright-area p {
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+.about-us {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.6))), url("/img/restaurant.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("/img/restaurant.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.about-us h1 {
+  text-align: center;
+  margin: auto;
+}
+
+.about {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("/img/texture.jpg");
+  background-repeat: false;
+}
+
+.about .box {
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 1080px;
+  max-height: 70vh;
+  padding: 2em;
+  text-align: justify;
+  width: 95%;
+  height: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .box__items {
+  margin: auto;
+}
+
+.biriyani-kabab {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.6))), url("/img/biriyani1.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("/img/biriyani1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.biriyani-kabab h1 {
+  text-align: center;
+  margin: auto;
+}
+
+.burger-pizza {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.6))), url("/img/pizza.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("/img/pizza.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.burger-pizza h1 {
+  text-align: center;
+  margin: auto;
+}
+
+.menu {
+  padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("/img/texture.jpg");
+  background-repeat: false;
+}
+
+.menu .box {
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 1080px;
+  padding: 2em;
+  text-align: justify;
+  width: 95%;
+  height: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.menu .box .menu_biriyani {
+  margin: auto;
+  width: 100%;
+}
+
+.menu .box .menu_biriyani .item {
+  font-size: 1.3rem;
+  padding: .2em 1em;
+  border: 1px solid black;
+  margin: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
