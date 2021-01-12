@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url("/img/texture.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("/img/texture.jpg");
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.main-nav {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #231B05;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: white;
+  margin-left: 1em;
+}
+
+.nav__item:hover {
+  color: #f36b21;
+}
+
+.carousel {
+  margin-top: 10vh;
+}
+
+.carousel img {
+  height: 90vh;
+  width: 100%;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-inner__border {
+  margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  padding: 3rem;
+}
+
+.carousel-inner__text {
+  height: 50vh;
+  width: 50%;
+  position: absolute;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  top: 25%;
+  left: 25%;
+}
+
+.carousel-heading {
+  color: #FFBB00;
+  margin-bottom: .3em;
+  font-size: 4rem;
+}
+
+.story {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("/img/texture.jpg");
+  background-repeat: false;
+}
+
+.story .box {
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 1080px;
+  max-height: 70vh;
+  width: 95%;
+  height: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.story .box__items {
+  margin: auto;
+}
+
+.story .box__text-box {
+  text-align: center;
+}
+
+.story .box__images {
+  margin: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.story .box__images img {
+  width: 45%;
+  height: auto;
+  max-height: 38vh;
+  padding: .5em;
+}
+
+.tasteful {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.6))), url("/img/biriyani1.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("/img/biriyani1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.tasteful h1 {
+  text-align: center;
+  margin: auto;
+}
+
+.tasteful span {
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+}
+
+.blend {
+  height: 70vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.6))), url("/img/biriyani2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("/img/biriyani2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.blend h1 {
+  text-align: center;
+  margin: auto;
+}
+
+.blend span {
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+}
+
+.widget-area {
+  background-color: black;
+  text-align: center;
+}
+
+.widget-area > div {
+  margin: auto;
+  padding: 1em 0;
+  color: white;
+}
+
+.copyright-area {
+  color: white;
+  background-color: #111111;
+  text-align: center;
+}
+
+.copyright-area p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
