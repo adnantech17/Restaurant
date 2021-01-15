@@ -312,11 +312,49 @@ header {
                 margin: 0.5em;
                 display: flex;
                 justify-content: space-between;
-                .name{                    
-                }
             }
         }
     }
 }
 
+
+//--------------------Gallery----------------
+
+.gallery{
+    margin: 10px 50px;
+
+    img {
+        padding: 1em;
+        width: 14em;
+        height: 14em;
+        object-fit: cover;
+
+        &:hover {
+            filter: grayscale(100%);
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+//  -------------------- Contact Us -------------
+
+input {
+    width: 100%;
+}
+
+#msg {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+#submit {
+    width: 30%;
+}
 
