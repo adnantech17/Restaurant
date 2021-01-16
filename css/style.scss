@@ -321,19 +321,28 @@ header {
 //--------------------Gallery----------------
 
 .gallery{
-    margin: 10px 50px;
+    background: url("/img/texture.jpg");
+    .box {
+        margin: auto;
+        text-align: center;
+        background:rgba(0, 0, 0, .7);
 
-    img {
-        padding: 1em;
-        width: 14em;
-        height: 14em;
-        object-fit: cover;
+        img {
+            padding: 1em;
+            width: 14em;
+            height: 14em;
+            object-fit: cover;
 
-        &:hover {
-            filter: grayscale(100%);
-            transform: scale(1.1);
+
+            &:hover {
+                filter: grayscale(100%);
+                transform: scale(1.1);
+                cursor: pointer;
+            }
         }
+
     }
+    padding: 3em;
 }
 
 
@@ -356,5 +365,57 @@ input {
 
 #submit {
     width: 30%;
+}
+
+
+// Gallery 
+
+@keyframes image-animation {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 80%;
+    }
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lightbox #image-content {
+    max-width: 80%;
+    height: 80%;
+    object-fit: contain;
+    background: rgba(0, 0, 0, .9);
+    box-shadow: 1px;
+
+    animation: image-animation;
+    animation-duration: .5s;
+}
+
+#lightbox #image-next {
+    width: 3em;
+    background: none;
+    margin-right: 1em;
+}
+
+#lightbox #image-prev {
+    width: 3em;
+    background: none;
+    margin-left: 1em;
 }
 
